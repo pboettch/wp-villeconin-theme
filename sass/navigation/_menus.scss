@@ -1,63 +1,116 @@
+
 .main-navigation {
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
+	margin: 0;
+	padding: 0;
 
-	ul {
-		list-style: none;
+	border-left: 1px solid #1b1b1b;
+	border-right: 1px solid #1b1b1b;
+
+	ul { /* menu level 0 */
 		margin: 0;
 		padding-left: 0;
 
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: 1.5em;
-			left: -999em;
-			z-index: 99999;
+		li {
+			background-color: $color__background-item;
 
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
-			li {
-				&:hover > ul {
-					left: 100%;
-				}
-			}
+			display: block;
+			position: relative;
+			border-top: 1px #2c2d2e solid;
+			border-bottom: 1px #040506 solid;
+			padding: 0;
+			line-height: normal;
 
 			a {
-				width: 200px;
+				padding:6px 0 6px 49px;
+				display:block;
+				font-weight:300;
 			}
 
-			:hover > a {
+			ul { /* sub menu #0 */
+				display: none;
 			}
+			&:hover {
 
-			a:hover {
+				background-color: $color__background-item;
+
+				ul {
+					display: block;
+					border-left: 1px #000 solid;
+					position: absolute;
+					left: $size__site-header - 30px;
+					width: 180px;
+					top:5px;
+					z-index:10;
+
+					li {
+						border-top:1px #2c2d2e solid;
+						border-bottom:1px #040506 solid;
+
+						a {
+							background-position:7px center;
+							padding-left:27px;
+						}
+
+						ul { /* sub menu #1 */
+							display:none;
+						}
+						&:hover {
+							 ul {
+								display: block;
+								left: 160px;
+								top: 5px;
+
+								li {
+									ul {
+										display: none;
+									}
+									&:hover {
+										display: block;
+
+										ul {
+											display: none;
+										}
+										&:hover {
+											display: block;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 			}
-		}
-
-		li:hover > ul {
-			left: auto;
 		}
 	}
-	li {
-		float: left;
-		position: relative;
 
-		&:hover > a {
-		}
-	}
 	a {
+		color:#eeeded;
+		background:url(images/nav-icon.png) no-repeat 20px center;
 		display: block;
 		text-decoration: none;
+
+		&:hover {
+			background-image:url(images/nav-icon-hover.png);
+			color:#7bb303;
+		}
+	}
+
+	li {
+		list-style: none;
+		&:hover {
+			background:url(images/menu-hover.png);
+		}
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+		background-image:url(images/nav-icon-hover.png);
+		color:#7bb303;
 	}
 }
 

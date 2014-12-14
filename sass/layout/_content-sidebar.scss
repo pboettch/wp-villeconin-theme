@@ -1,3 +1,13 @@
+.site-header {
+	background-color: $color__background-item;
+	width: $size__site-header;
+	margin: 0;
+	padding: 0;
+	border-left: 1px solid #1b1b1b;
+	border-right: 1px solid #1b1b1b;
+	float: left;
+}
+
 .content-area {
 	float: left;
 	margin: 0 (-$size__site-sidebar) 0 0;
