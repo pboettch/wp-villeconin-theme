@@ -4,14 +4,22 @@ $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
-$color__background-item: rgba(0, 52, 104, 0.95);
+
+$color__navigation-bg-item: rgba(0, 52, 104, 0.95);
+$color__navigation-bg-item-hover: rgba(0, 45, 90, 0.95);
+$color__navigation-fg-item: #eeeded;
+$color__navigation-fg-item-hover: #7bb303;
+
+$color__background-content: $color__navigation-bg-item;
 
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
+
 $color__link: #86c301;
 $color__link-visited: #eeeded;
 $color__link-hover: #eeeded;
+
 $color__text-main: #404040;
 
 $color__border-button: #ccc #ccc #bbb;

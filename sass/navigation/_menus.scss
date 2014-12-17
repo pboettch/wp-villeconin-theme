@@ -1,5 +1,7 @@
 
 .main-navigation {
+	background-color: $color__background-content;
+
 	clear: both;
 	display: block;
 	float: left;
@@ -15,12 +17,12 @@
 		padding-left: 0;
 
 		li {
-			background-color: $color__background-item;
+			background-color: $color__navigation-bg-item;
 
 			display: block;
 			position: relative;
-			border-top: 1px #2c2d2e solid;
-			border-bottom: 1px #040506 solid;
+			border-top: 0px #2c2d2e solid;
+			border-bottom: 0px #040506 solid;
 			padding: 0;
 			line-height: normal;
 
@@ -34,8 +36,7 @@
 				display: none;
 			}
 			&:hover {
-
-				background-color: $color__background-item;
+				background-color: $color__navigation-bg-item-hover;
 
 				ul {
 					display: block;
@@ -88,29 +89,26 @@
 	}
 
 	a {
-		color:#eeeded;
+		color: $color__navigation-fg-item;
 		background:url(images/nav-icon.png) no-repeat 20px center;
 		display: block;
 		text-decoration: none;
 
 		&:hover {
 			background-image:url(images/nav-icon-hover.png);
-			color:#7bb303;
+			color: $color__navigation-fg-item-hover;
 		}
 	}
 
 	li {
 		list-style: none;
-		&:hover {
-			background:url(images/menu-hover.png);
-		}
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 		background-image:url(images/nav-icon-hover.png);
-		color:#7bb303;
+		color: $color__navigation-fg-item-hover;
 	}
 }
 
