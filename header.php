@@ -31,6 +31,10 @@
 			<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( 'Primary Menu', 'villeconin' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
+
+		<?php get_sidebar(); ?>
+
 	</header><!-- #masthead -->
+
 
 	<div id="content" class="site-content">
