@@ -7,6 +7,7 @@
 }
 
 .byline,
+.posted-on,
 .updated:not(.published){
 	display: none;
 }
@@ -14,6 +15,18 @@
 .single .byline,
 .group-blog .byline {
 	display: inline;
+}
+
+.entry-header {
+	font-size: 30.52px;
+	font-family: 'Roboto Condensed', Arial;
+	font-weight: lighter;
+	display: inline-block;
+	clear: both;
+	text-transform: uppercase;
+    padding:51px 0 0;
+	color:#eeeded;
+	:first-letter { color:#86c301; }
 }
 
 .page-content,
