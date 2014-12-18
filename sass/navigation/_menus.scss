@@ -10,9 +10,6 @@
 	margin: 0;
 	padding: 0;
 
-	border-left: 1px solid #1b1b1b;
-	border-right: 1px solid #1b1b1b;
-
 	ul { /* menu level 0 */
 		margin: 0;
 		padding-left: 0;
@@ -22,8 +19,6 @@
 
 			display: block;
 			position: relative;
-			border-top: 0px #2c2d2e solid;
-			border-bottom: 0px #040506 solid;
 			padding: 0;
 			line-height: normal;
 
@@ -41,7 +36,6 @@
 
 				ul {
 					display: block;
-					border-left: 1px #000 solid;
 					position: absolute;
 					left: $size__site-header - 30px;
 					width: 180px;
@@ -49,9 +43,6 @@
 					z-index:10;
 
 					li {
-						border-top:1px #2c2d2e solid;
-						border-bottom:1px #040506 solid;
-
 						a {
 							background-position:7px center;
 							padding-left:27px;
