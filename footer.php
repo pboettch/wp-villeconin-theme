@@ -10,8 +10,12 @@
 
 	</div><!-- #content -->
 
+	<?php get_sidebar(); ?>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
+
 		<div class="site-info">
+			oui
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'villeconin' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'villeconin' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
 			<?php printf( __( 'Theme: %1$s by %2$s.', 'villeconin' ), 'Villeconin', '<a href="https://github.com/pboettch" rel="designer">Patrick Boettcher</a>' ); ?>
