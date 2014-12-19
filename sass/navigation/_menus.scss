@@ -31,6 +31,7 @@
 			ul { /* sub menu #0 */
 				display: none;
 			}
+
 			&:hover {
 				background-color: $color__navigation-bg-item-hover;
 
@@ -92,15 +93,19 @@
 		}
 	}
 
-	li {
-		list-style: none;
-	}
-
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 		background-image:url(images/nav-icon-hover.png);
 		color: $color__navigation-fg-item-hover;
+	}
+
+	.menu-item-has-children > a {
+		background: url(images/menu_sub_icon.png) no-repeat center right;
+	} /* small arrow to indicate a sub-menu */
+
+	li {
+		list-style: none;
 	}
 }
 
