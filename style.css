@@ -136,7 +136,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #ffffff;
   font-family: "Roboto Condensed", Arial, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
@@ -365,9 +365,9 @@ a {
   text-decoration: none;
   outline: none; }
   a:visited {
-    color: #eeeded; }
+    color: #86c301; }
   a:hover, a:focus, a:active {
-    color: #eeeded; }
+    color: #86c301; }
 
 /*--------------------------------------------------------------
 5.2 Menus
@@ -411,6 +411,8 @@ a {
           .main-navigation ul li:hover ul li a {
             background-position: 7px center;
             padding-left: 27px; }
+            .main-navigation ul li:hover ul li a:hover {
+              background-position: 7px center; }
           .main-navigation ul li:hover ul li ul {
             /* sub menu #1 */
             display: none; }
@@ -428,16 +430,16 @@ a {
                 display: block; }
   .main-navigation a {
     color: #eeeded;
-    background: url(images/nav-icon.png) no-repeat 20px center;
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    background: url(images/nav-icon.png) no-repeat 20px center; }
     .main-navigation a:hover {
-      background-image: url(images/nav-icon-hover.png);
+      background: url(images/nav-icon-hover.png) no-repeat 20px center;
       color: #7bb303; }
   .main-navigation .current_page_item > a,
   .main-navigation .current-menu-item > a,
   .main-navigation .current_page_ancestor > a {
-    background-image: url(images/nav-icon-hover.png);
+    background: url(images/nav-icon-hover.png) no-repeat 20px center;
     color: #7bb303; }
   .main-navigation .menu-item-has-children > a {
     background: url(images/menu_sub_icon.png) no-repeat center right; }
@@ -588,9 +590,9 @@ body {
   margin: 0;
   padding: 60px 0 30px;
   text-align: center;
-  background-color: rgba(0, 52, 104, 0.95); }
+  background-color: rgba(0, 52, 104, 0.95);
+  font: 700 24px 'Roboto Condensed', Arial; }
   .site-branding .site-title {
-    font: 700 45px 'Roboto Condensed', Arial;
     text-decoration: none; }
 
 #secondary {
@@ -653,6 +655,26 @@ body {
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0; }
+  .page-content h1,
+  .entry-content h1,
+  .entry-summary h1 {
+    margin-bottom: 0.5em;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .page-content h2,
+  .entry-content h2,
+  .entry-summary h2 {
+    margin-bottom: 0.5em;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline; }
+  .page-content h3,
+  .entry-content h3,
+  .entry-summary h3 {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    text-decoration: underline; }
 
 .page-links {
   clear: both;
