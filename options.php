@@ -49,7 +49,7 @@ function optionsframework_options()
 	$options[] = array(
 			'name'    => __('Effects', 'villeconin'),
 			'desc'    => __('Slider effects', 'villeconin'),
-			'id'      => 'sliderefect',
+			'id'      => 'slidereffect',
 			'type'    => 'radio',
 			'std'     => '1',
 			'options' => $slide_effects,

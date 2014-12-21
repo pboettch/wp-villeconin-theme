@@ -116,8 +116,6 @@ function villeconin_scripts() {
 
 		wp_enqueue_script( 'supersized_js', get_bloginfo('template_url').'/supersized/js/supersized.3.2.7.min.js', array('jquery'));
 		wp_enqueue_script( 'supersized_shutter_js', get_template_directory_uri() . '/supersized/theme/supersized.shutter.min.js');
-
-		wp_enqueue_script( 'villeconin_supersized_js', get_bloginfo('template_url').'/js/villeconin-supersized.js.php');
 	}
 }
 add_action( 'wp_enqueue_scripts', 'villeconin_scripts' );
@@ -146,3 +144,6 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/* supersized-instrumentations */
+require get_template_directory() . '/inc/villeconin-supersized.php';
