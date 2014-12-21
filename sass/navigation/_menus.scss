@@ -47,6 +47,9 @@
 						a {
 							background-position:7px center;
 							padding-left:27px;
+							&:hover {
+								background-position: 7px center;
+							}
 						}
 
 						ul { /* sub menu #1 */
@@ -81,14 +84,17 @@
 		}
 	}
 
+
 	a {
 		color: $color__navigation-fg-item;
-		background:url(images/nav-icon.png) no-repeat 20px center;
 		display: block;
 		text-decoration: none;
 
+		background:url(images/nav-icon.png) no-repeat 20px center;
+
+
 		&:hover {
-			background-image:url(images/nav-icon-hover.png);
+			background: url(images/nav-icon-hover.png) no-repeat 20px center;
 			color: $color__navigation-fg-item-hover;
 		}
 	}
@@ -96,7 +102,7 @@
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
-		background-image:url(images/nav-icon-hover.png);
+		background: url(images/nav-icon-hover.png) no-repeat 20px center;
 		color: $color__navigation-fg-item-hover;
 	}
 
