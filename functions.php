@@ -109,6 +109,16 @@ function villeconin_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	if (is_front_page()) {
+		wp_enqueue_style( 'supersized_style', get_bloginfo('template_url').'/supersized/css/supersized.css');
+		wp_enqueue_style( 'supersized_style_shutter', get_template_directory_uri()."/supersized/theme/supersized.shutter.css" );
+
+		wp_enqueue_script( 'supersized_js', get_bloginfo('template_url').'/supersized/js/supersized.3.2.7.min.js', array('jquery'));
+		wp_enqueue_script( 'supersized_shutter_js', get_template_directory_uri() . '/supersized/theme/supersized.shutter.min.js');
+
+		wp_enqueue_script( 'villeconin_supersized_js', get_bloginfo('template_url').'/js/villeconin-supersized.js.php');
+	}
 }
 add_action( 'wp_enqueue_scripts', 'villeconin_scripts' );
 

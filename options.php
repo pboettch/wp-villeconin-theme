@@ -66,9 +66,9 @@ function optionsframework_options()
 	$slidecount = of_get_option('slidecount');
 	if (!is_numeric($slidecount)) {
 		$slidecount = 6;
-	} elseif ($slidecount > 20) {
+	} elseif ($slidecount > 20) { /* max 20 */
 		$slidecount = 20;
-	} elseif ($slidecount < 0) {
+	} elseif ($slidecount < 0) { /* min 1 */
 		$slidecount = 1;
 	}
 
@@ -89,7 +89,6 @@ function optionsframework_options()
 			'type' => 'text'
 		);
 	}
-
 
 	return $options;
 }
