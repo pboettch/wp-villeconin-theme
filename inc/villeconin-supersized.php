@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
 		stop_loop				:	0,			// Pauses slideshow on last slide
 		random					: 	0,			// Randomize slide order (Ignores start slide)
 		slide_interval          :   5000,		// Length between transitions
-		transition              :   <?php echo of_get_option('slidereffect'); ?>, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+		transition              :   <?php echo of_get_option('slidereffect', true); ?>, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
 		transition_speed		:	1000,		// Speed of transition
 		new_window				:	1,			// Image links open in new window/tab
 		pause_hover             :   0,			// Pause slideshow on hover
@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
 
 		// Components
 		slide_links				:	'blank',	// Individual links for each slide (Options: false, 'number', 'name', 'blank')
-		thumb_links				:	1,			// Individual thumb links for each slide
+		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
 <?php
@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
 ?>
 		],
 		// Theme Options
-		progress_bar			:	1,			// Timer for each slide
+		progress_bar			:	0,			// Timer for each slide
 		mouse_scrub				:	0
 
 	});
