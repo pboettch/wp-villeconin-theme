@@ -38,7 +38,11 @@ jQuery(document).ready(function($) {
 		slide_links				:	'blank',	// Individual links for each slide (Options: false, 'number', 'name', 'blank')
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
+
+		image_path				:	'<?php echo get_template_directory_uri() . '/supersized/img/'; ?>', // For icons
+
 		slides 					:  	[			// Slideshow Images
+
 <?php
 		$slidecount = of_get_option('slidecount');
 		for ($i = 0; $i < $slidecount; $i++) {
