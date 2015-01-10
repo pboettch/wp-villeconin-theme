@@ -360,13 +360,13 @@ textarea {
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
-a {
+a, a[href^="mailto:"] {
   color: #86c301;
   text-decoration: none;
   outline: none; }
-  a:visited {
+  a:visited, a[href^="mailto:"]:visited {
     color: #86c301; }
-  a:hover, a:focus, a:active {
+  a:hover, a:focus, a:active, a[href^="mailto:"]:hover, a[href^="mailto:"]:focus, a[href^="mailto:"]:active {
     color: #86c301; }
 
 /*--------------------------------------------------------------
