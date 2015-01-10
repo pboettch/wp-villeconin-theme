@@ -22,7 +22,7 @@
 			line-height: normal;
 
 			a {
-				padding:6px 0 6px 49px;
+				padding:6px 0 6px 30px;
 				display:block;
 				font-weight:300;
 			}
@@ -44,10 +44,8 @@
 
 					li {
 						a {
-							background-position:7px center;
 							padding-left:27px;
 							&:hover {
-								background-position: 7px center;
 							}
 						}
 
@@ -89,11 +87,7 @@
 		display: block;
 		text-decoration: none;
 
-		background:url(images/nav-icon.png) no-repeat 20px center;
-
-
 		&:hover {
-			background: url(images/nav-icon-hover.png) no-repeat 20px center;
 			color: $color__navigation-fg-item-hover;
 		}
 	}
@@ -101,7 +95,6 @@
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
-		background: url(images/nav-icon-hover.png) no-repeat 20px center;
 		color: $color__navigation-fg-item-hover;
 	}
 
