@@ -90,5 +90,21 @@ function optionsframework_options()
 		);
 	}
 
+	$options[] = array(
+		'name' => __('Content', 'villeconin'),
+		'type' => 'heading'
+	);
+
+	$options[] = array(
+			'name'    => __('Footer Text', 'villeconin'),
+			'desc'    => __('Le text en HTML afficher dans le footer', 'villeconin'),
+			'id'      => 'footertext',
+			'type'    => 'textarea',
+			'std'     => 'Mairie Villeconin <span class="sep"> | </span>'.
+						'<a href="#">Mentions légales</a>'.
+						'<span class="sep"> | </span>'.
+						'<a href="#">Contacter nous</a>',
+	);
+
 	return $options;
 }

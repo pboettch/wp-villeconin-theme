@@ -13,9 +13,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
 		<div class="site-info">
-			Mairie Villeconin
-			<span class="sep"> | </span>
-			<a href="http://s530957142.onlinehome.fr/sandbox-g/mentions-legales-2/">Mentions légales</a>
+		    <?php echo of_get_option('footertext', 'Mairie Villeconin'); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
