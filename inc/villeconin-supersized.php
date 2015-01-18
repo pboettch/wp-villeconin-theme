@@ -1,6 +1,6 @@
 <?php
 
-add_action('wp_head', 'villeconin_supersized');
+add_action('wp_footer', 'villeconin_supersized');
 
 
 function villeconin_supersized()
