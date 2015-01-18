@@ -446,7 +446,7 @@ a, a[href^="mailto:"] {
 .menu-toggle {
   display: none; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block; }
@@ -571,17 +571,6 @@ body {
   background-attachment: fixed;
   background-size: cover; }
 
-#page {
-  z-index: 999;
-  margin: 0 auto;
-  width: 1100px; }
-
-#masthead {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 248px;
-  float: left; }
-
 .site-branding {
   width: 100%;
   margin: 0;
@@ -592,32 +581,85 @@ body {
   .site-branding .site-title {
     text-decoration: none; }
 
+#page {
+  z-index: 999;
+  margin: 0 auto;
+  width: 1100px; }
+
+#masthead {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  width: 248px; }
+
 #secondary {
   float: left;
+  background-color: rgba(0, 52, 104, 0.95);
   margin-top: 20px;
   padding-top: 20px;
   padding-left: 20px;
-  background-color: rgba(0, 52, 104, 0.95);
   width: 248px; }
 
 #content {
-  margin-top: 20px;
-  float: right;
+  float: left;
   word-wrap: break-word;
-  width: 800px; }
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 782px; }
 
 #primary {
-  min-height: 600px;
   background-color: rgba(0, 52, 104, 0.95);
+  min-height: 600px;
   padding: 0px 20px; }
 
 #colophon {
   display: block;
   clear: both;
-  margin-top: 20px;
   background-color: rgba(0, 52, 104, 0.95);
-  width: 1100px; }
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 1060px; }
 
+@media screen and (max-width: 1100px) and (min-width: 960px) {
+  #content {
+    width: 642px; }
+
+  #colophon {
+    width: 920px; }
+
+  #page {
+    width: 960px; } }
+@media screen and (max-width: 960px) and (min-width: 768px) {
+  #content {
+    width: 450px; }
+
+  #colophon {
+    width: 728px; }
+
+  #page {
+    width: 768px; } }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  #masthead {
+    width: 440px;
+    margin-left: 0px; }
+
+  #content {
+    float: left;
+    margin-left: 0px;
+    width: 440px; }
+
+  #colophon {
+    margin-left: 0px;
+    width: 440px; }
+
+  #secondary {
+    margin-left: 0px;
+    width: 440px; }
+
+  #page {
+    width: 480px; } }
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
