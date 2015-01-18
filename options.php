@@ -106,5 +106,13 @@ function optionsframework_options()
 						'<a href="#">Contacter nous</a>',
 	);
 
+	$options[] = array(
+			'name'    => __('Ticker Text', 'villeconin'),
+			'desc'    => __('Le text en HTML afficher dans le ticker (laisser vide pour ne pas afficher le ticker)', 'villeconin'),
+			'id'      => 'tickertext',
+			'type'    => 'textarea',
+			'std'     => '',
+	);
+
 	return $options;
 }
