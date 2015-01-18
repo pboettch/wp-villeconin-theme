@@ -735,6 +735,11 @@ body {
 .bypostauthor {
   display: block; }
 
+.event-entry-meta {
+  font-size: 12px;
+  text-transform: none;
+  font-family: Arial; }
+
 /*--------------------------------------------------------------
 11.0 Infinite scroll
 --------------------------------------------------------------*/
