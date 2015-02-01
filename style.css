@@ -574,7 +574,7 @@ body {
 .site-branding {
   width: 100%;
   margin: 0;
-  padding: 60px 0 30px;
+  padding: 35px 0 30px;
   text-align: center;
   background-color: rgba(0, 52, 104, 0.95);
   font: 700 24px 'Roboto Condensed', Arial; }
@@ -593,6 +593,11 @@ body {
   float: left;
   width: 248px; }
 
+#primary {
+  background-color: rgba(0, 52, 104, 0.95);
+  min-height: 600px;
+  padding: 0px 20px; }
+
 #secondary {
   float: left;
   background-color: rgba(0, 52, 104, 0.95);
@@ -602,17 +607,12 @@ body {
   width: 248px; }
 
 #content {
-  float: left;
+  float: right;
   word-wrap: break-word;
   margin-right: 20px;
   margin-top: 20px;
   margin-left: 30px;
   width: 782px; }
-
-#primary {
-  background-color: rgba(0, 52, 104, 0.95);
-  min-height: 600px;
-  padding: 0px 20px; }
 
 #colophon {
   display: block;
@@ -640,26 +640,27 @@ body {
 
   #page {
     width: 768px; } }
-@media screen and (max-width: 768px) and (min-width: 480px) {
-  #masthead {
-    width: 440px;
-    margin-left: 0px; }
+/* small screens everything is stack on top of each other */
+@media screen and (max-width: 768px) {
+  #colophon, #masthead, #content, #secondary {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%; }
 
   #content {
     float: left;
-    margin-left: 0px;
-    width: 440px; }
-
-  #colophon {
-    margin-left: 0px;
-    width: 440px; }
-
-  #secondary {
-    margin-left: 0px;
-    width: 440px; }
+    height: auto; }
 
   #page {
-    width: 480px; } }
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; }
+
+  .site-branding {
+    padding: 20px 0 5px; }
+
+  #primary {
+    min-height: 0px; } }
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
@@ -679,13 +680,13 @@ body {
   display: inline; }
 
 .entry-header {
-  font-size: 30.52px;
+  font-size: 24px;
   font-family: 'Roboto Condensed', Arial;
   font-weight: lighter;
   display: inline-block;
   clear: both;
   text-transform: uppercase;
-  padding: 51px 0 0;
+  padding: 25px 0 0;
   color: #eeeded; }
   .entry-header :first-letter {
     color: #86c301; }
