@@ -2,9 +2,12 @@
 
 add_action('wp_footer', 'villeconin_supersized');
 
-
 function villeconin_supersized()
 {
+	if (!is_front_page()) {
+		return;
+	}
+
 	?><script type="text/javascript">
 jQuery(document).ready(function($) {
 
