@@ -34,7 +34,6 @@ get_header(); ?>
 		</div><!--Control Bar-->
 
 	</div><!--.container-->
-</div><!--.slider-parent--><
-
+</div><!--.slider-parent-->
 
 <?php get_footer(); ?>
