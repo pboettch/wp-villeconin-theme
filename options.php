@@ -96,6 +96,14 @@ function optionsframework_options()
 	);
 
 	$options[] = array(
+			'name' => __('Registered users only - maintenance mode', 'villeconin'),
+			'desc' => __('Le site passe en mode maintenace avec l\'affiche fix.', 'villeconin'),
+			'id' => 'registered-users-only',
+			'std' => '0',
+			'type' => 'checkbox'
+	);
+
+	$options[] = array(
 			'name'    => __('Footer Text', 'villeconin'),
 			'desc'    => __('Le text en HTML afficher dans le footer', 'villeconin'),
 			'id'      => 'footertext',

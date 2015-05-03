@@ -14,10 +14,19 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<?php
+if ( of_get_option('registered-users-only', false) ) {
+	if (!is_user_logged_in()) {
+		?><meta http-equiv="refresh" content="0; url=<?php esc_url( bloginfo('template_url') ); ?>/index-maintenance.html" /><?php
+	}
+}
+?>
+
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'villeconin' ); ?></a>
 
